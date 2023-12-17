@@ -1,0 +1,47 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(208, 145, 155);
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 25px;
+    background: rgb(113, 188, 220);
+}
+.game-details{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: rgb(229, 230, 201);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.play-board .food{
+    background: rgb(200, 169, 17);
+}
+.play-board .head{
+    background: rgb(40, 143, 149);
+}
